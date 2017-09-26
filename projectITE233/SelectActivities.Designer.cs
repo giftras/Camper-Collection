@@ -34,17 +34,19 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.sub5 = new System.Windows.Forms.ListBox();
+            this.sub4 = new System.Windows.Forms.ListBox();
+            this.sub3 = new System.Windows.Forms.ListBox();
+            this.sub2 = new System.Windows.Forms.ListBox();
+            this.sub1 = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Save = new System.Windows.Forms.Button();
+            this.SaveNext = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,11 +96,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listBox5);
-            this.groupBox1.Controls.Add(this.listBox4);
-            this.groupBox1.Controls.Add(this.listBox3);
-            this.groupBox1.Controls.Add(this.listBox2);
-            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.sub5);
+            this.groupBox1.Controls.Add(this.sub4);
+            this.groupBox1.Controls.Add(this.sub3);
+            this.groupBox1.Controls.Add(this.sub2);
+            this.groupBox1.Controls.Add(this.sub1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -108,60 +110,60 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(741, 242);
+            this.groupBox1.Size = new System.Drawing.Size(741, 175);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Activities";
             // 
-            // listBox5
+            // sub5
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 16;
-            this.listBox5.Location = new System.Drawing.Point(607, 54);
-            this.listBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(128, 100);
-            this.listBox5.TabIndex = 9;
+            this.sub5.FormattingEnabled = true;
+            this.sub5.ItemHeight = 16;
+            this.sub5.Location = new System.Drawing.Point(607, 54);
+            this.sub5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub5.Name = "sub5";
+            this.sub5.Size = new System.Drawing.Size(128, 100);
+            this.sub5.TabIndex = 9;
             // 
-            // listBox4
+            // sub4
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Location = new System.Drawing.Point(459, 52);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(128, 100);
-            this.listBox4.TabIndex = 8;
+            this.sub4.FormattingEnabled = true;
+            this.sub4.ItemHeight = 16;
+            this.sub4.Location = new System.Drawing.Point(459, 52);
+            this.sub4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub4.Name = "sub4";
+            this.sub4.Size = new System.Drawing.Size(128, 100);
+            this.sub4.TabIndex = 8;
             // 
-            // listBox3
+            // sub3
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(305, 52);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(128, 100);
-            this.listBox3.TabIndex = 7;
+            this.sub3.FormattingEnabled = true;
+            this.sub3.ItemHeight = 16;
+            this.sub3.Location = new System.Drawing.Point(305, 52);
+            this.sub3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub3.Name = "sub3";
+            this.sub3.Size = new System.Drawing.Size(128, 100);
+            this.sub3.TabIndex = 7;
             // 
-            // listBox2
+            // sub2
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(155, 52);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(128, 100);
-            this.listBox2.TabIndex = 6;
+            this.sub2.FormattingEnabled = true;
+            this.sub2.ItemHeight = 16;
+            this.sub2.Location = new System.Drawing.Point(155, 52);
+            this.sub2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub2.Name = "sub2";
+            this.sub2.Size = new System.Drawing.Size(128, 100);
+            this.sub2.TabIndex = 6;
             // 
-            // listBox1
+            // sub1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(9, 52);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(128, 100);
-            this.listBox1.TabIndex = 5;
+            this.sub1.FormattingEnabled = true;
+            this.sub1.ItemHeight = 16;
+            this.sub1.Location = new System.Drawing.Point(9, 52);
+            this.sub1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sub1.Name = "sub1";
+            this.sub1.Size = new System.Drawing.Size(128, 100);
+            this.sub1.TabIndex = 5;
             // 
             // label6
             // 
@@ -217,11 +219,33 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Bunk";
             // 
+            // Save
+            // 
+            this.Save.Location = new System.Drawing.Point(278, 273);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(95, 23);
+            this.Save.TabIndex = 10;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
+            // 
+            // SaveNext
+            // 
+            this.SaveNext.Location = new System.Drawing.Point(440, 273);
+            this.SaveNext.Name = "SaveNext";
+            this.SaveNext.Size = new System.Drawing.Size(97, 23);
+            this.SaveNext.TabIndex = 14;
+            this.SaveNext.Text = "Save Next";
+            this.SaveNext.UseVisualStyleBackColor = true;
+            this.SaveNext.Click += new System.EventHandler(this.SaveNext_Click);
+            // 
             // SelectActivities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 346);
+            this.ClientSize = new System.Drawing.Size(827, 310);
+            this.Controls.Add(this.SaveNext);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.bunkBox);
             this.Controls.Add(this.label8);
@@ -229,7 +253,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SelectActivities";
             this.Text = "SelectActivities";
             this.Load += new System.EventHandler(this.Form_Load);
@@ -248,16 +272,18 @@
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.ListBox listBox5;
-		private System.Windows.Forms.ListBox listBox4;
-		private System.Windows.Forms.ListBox listBox3;
-		private System.Windows.Forms.ListBox listBox2;
-		private System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.ListBox sub5;
+		private System.Windows.Forms.ListBox sub4;
+		private System.Windows.Forms.ListBox sub3;
+		private System.Windows.Forms.ListBox sub2;
+		private System.Windows.Forms.ListBox sub1;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-	}
+        private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.Button SaveNext;
+    }
 }

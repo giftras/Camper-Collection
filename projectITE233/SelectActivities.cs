@@ -37,9 +37,24 @@ namespace projectITE233
             {
                 nameBox.Items.Add(n.Element("name").Value);
             }
+
+//            XDocument xdocA = XDocument.Load("../../activities.xml");
+//            var xdocReadA = xdocA.Elements("Type1").Elements("item").Elements("subject").Elements("activities");
+//          foreach (var n in xdocReadA)
+//            {
+//                sub1.Items.Add(n.Element("activityname").Value);
+//            }
         }
 
-     
+        private void Save_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SaveNext_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

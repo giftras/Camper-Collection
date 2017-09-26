@@ -9,25 +9,25 @@
   <item>
     <subject>Activity2</subject>
         <activities>
-          <activityname>soccer</activityname>
+          <activityname>soccer2</activityname>
         </activities>
   </item>
   <item>
     <subject>Activity3</subject>
         <activities>
-          <activityname>soccer</activityname>
+          <activityname>soccer3</activityname>
         </activities>
   </item>
   <item>
     <subject>Activity4</subject>
         <activities>
-          <activityname>soccer</activityname>
+          <activityname>soccer4</activityname>
         </activities>
   </item>
   <item>
     <subject>Activity5</subject>
         <activities>
-          <activityname>soccer</activityname>
+          <activityname>soccer5</activityname>
         </activities>
   </item>
 </Type1>
