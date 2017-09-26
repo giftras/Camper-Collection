@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Type1>
+  <item>
+    <name>Alvin</name>
+    <nickname>Alvin</nickname>
+    <bunk>Monkey</bunk>
+    <age>5</age>
+    <nationality>Thai</nationality>
+    <restriction>None</restriction>
+    <medications>None</medications>
+    <transportation>Bus</transportation>
+    <startdate></startdate>
+    <enddate></enddate>
+    <nameParent1></nameParent1>
+    <phoneParent1></phoneParent1>
+    <emailParent1></emailParent1>
+    <nameParent2></nameParent2>
+    <phoneParent2></phoneParent2>
+    <emailParent2></emailParent2>
+  </item>
+</Type1>

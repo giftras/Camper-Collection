@@ -2,32 +2,32 @@
 <Type1>
   <item>
     <subject>Activity1</subject>
-      <item>
-        <activity>soccer</activity>
-      </item>
+        <activities>
+          <activityname>soccer</activityname>
+        </activities>
   </item>
   <item>
     <subject>Activity2</subject>
-       <item>
-        <activity>dancing</activity>
-       </item>
+        <activities>
+          <activityname>soccer</activityname>
+        </activities>
   </item>
   <item>
     <subject>Activity3</subject>
-        <item>
-          <activity>circus</activity>
-        </item>
+        <activities>
+          <activityname>soccer</activityname>
+        </activities>
   </item>
   <item>
     <subject>Activity4</subject>
-        <item>
-          <activity>Tennis</activity>
-        </item>
+        <activities>
+          <activityname>soccer</activityname>
+        </activities>
   </item>
   <item>
     <subject>Activity5</subject>
-        <item>
-          <activity>Softball</activity>
-        </item>
+        <activities>
+          <activityname>soccer</activityname>
+        </activities>
   </item>
 </Type1>
