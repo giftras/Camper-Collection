@@ -1,21 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Type1>
   <item>
-    <name>Alvin</name>
-    <nickname>Alvin</nickname>
-    <bunk>Monkey</bunk>
-    <age>5</age>
+    <name>Raviporn</name>
+    <nickname>Giftsfla</nickname>
+    <bunk>1</bunk>
+    <age>19</age>
     <nationality>Thai</nationality>
     <restriction>None</restriction>
     <medications>None</medications>
-    <transportation>Bus</transportation>
-    <startdate></startdate>
-    <enddate></enddate>
-    <nameParent1></nameParent1>
-    <phoneParent1></phoneParent1>
-    <emailParent1></emailParent1>
-    <nameParent2></nameParent2>
-    <phoneParent2></phoneParent2>
-    <emailParent2></emailParent2>
+    <transportation>car</transportation>
+    <startdate>4 ตุลาคม 2560</startdate>
+    <enddate>8 ตุลาคม 2560</enddate>
+    <nameParent1>dad</nameParent1>
+    <phoneParent1>0000000</phoneParent1>
+    <emailParent1>dad@mom.com</emailParent1>
+    <nameParent2>mom</nameParent2>
+    <phoneParent2>000000</phoneParent2>
+    <emailParent2>mom@mom.com</emailParent2>
+  </item>
+  <item>
+    <name>Ratra</name>
+    <nickname>Kaow</nickname>
+    <bunk>2</bunk>
+    <age>15</age>
+    <nationality>Thai</nationality>
+    <restriction>Shrimp</restriction>
+    <medications>None</medications>
+    <transportation>car</transportation>
+    <startdate>4 ตุลาคม 2560</startdate>
+    <enddate>8 ตุลาคม 2560</enddate>
+    <nameParent1>dad</nameParent1>
+    <phoneParent1>0000000</phoneParent1>
+    <emailParent1>dad@mom.com</emailParent1>
+    <nameParent2>mom</nameParent2>
+    <phoneParent2>000000</phoneParent2>
+    <emailParent2>mom@mom.com</emailParent2>
   </item>
 </Type1>

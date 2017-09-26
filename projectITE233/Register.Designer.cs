@@ -32,32 +32,32 @@
 			this.label16 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
-			this.textBox12 = new System.Windows.Forms.TextBox();
-			this.textBox13 = new System.Windows.Forms.TextBox();
-			this.textBox14 = new System.Windows.Forms.TextBox();
+			this.emailparent2 = new System.Windows.Forms.TextBox();
+			this.phoneparent2 = new System.Windows.Forms.TextBox();
+			this.nameparent2 = new System.Windows.Forms.TextBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.label13 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
-			this.textBox11 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.emailparent1 = new System.Windows.Forms.TextBox();
+			this.phoneparent1 = new System.Windows.Forms.TextBox();
+			this.nameparent1 = new System.Windows.Forms.TextBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+			this.StartDate = new System.Windows.Forms.DateTimePicker();
+			this.EndDate = new System.Windows.Forms.DateTimePicker();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
-			this.textBox10 = new System.Windows.Forms.TextBox();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.textBox8 = new System.Windows.Forms.TextBox();
-			this.textBox7 = new System.Windows.Forms.TextBox();
+			this.transpotation = new System.Windows.Forms.TextBox();
+			this.medication = new System.Windows.Forms.TextBox();
+			this.restriction = new System.Windows.Forms.TextBox();
+			this.age = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.nickname = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.nationality = new System.Windows.Forms.TextBox();
+			this.bunk = new System.Windows.Forms.TextBox();
+			this.name = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -66,6 +66,7 @@
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
+			this.DeleteButton = new System.Windows.Forms.Button();
 			this.groupBox3.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -76,9 +77,9 @@
 			this.groupBox3.Controls.Add(this.label16);
 			this.groupBox3.Controls.Add(this.label15);
 			this.groupBox3.Controls.Add(this.label14);
-			this.groupBox3.Controls.Add(this.textBox12);
-			this.groupBox3.Controls.Add(this.textBox13);
-			this.groupBox3.Controls.Add(this.textBox14);
+			this.groupBox3.Controls.Add(this.emailparent2);
+			this.groupBox3.Controls.Add(this.phoneparent2);
+			this.groupBox3.Controls.Add(this.nameparent2);
 			this.groupBox3.Location = new System.Drawing.Point(297, 274);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(247, 100);
@@ -113,38 +114,38 @@
 			this.label14.TabIndex = 26;
 			this.label14.Text = "Phone NO.";
 			// 
-			// textBox12
+			// emailparent2
 			// 
-			this.textBox12.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox12.Location = new System.Drawing.Point(78, 71);
-			this.textBox12.Name = "textBox12";
-			this.textBox12.Size = new System.Drawing.Size(163, 20);
-			this.textBox12.TabIndex = 27;
+			this.emailparent2.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.emailparent2.Location = new System.Drawing.Point(78, 71);
+			this.emailparent2.Name = "emailparent2";
+			this.emailparent2.Size = new System.Drawing.Size(163, 20);
+			this.emailparent2.TabIndex = 27;
 			// 
-			// textBox13
+			// phoneparent2
 			// 
-			this.textBox13.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox13.Location = new System.Drawing.Point(78, 45);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(163, 20);
-			this.textBox13.TabIndex = 26;
+			this.phoneparent2.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.phoneparent2.Location = new System.Drawing.Point(78, 45);
+			this.phoneparent2.Name = "phoneparent2";
+			this.phoneparent2.Size = new System.Drawing.Size(163, 20);
+			this.phoneparent2.TabIndex = 26;
 			// 
-			// textBox14
+			// nameparent2
 			// 
-			this.textBox14.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox14.Location = new System.Drawing.Point(78, 19);
-			this.textBox14.Name = "textBox14";
-			this.textBox14.Size = new System.Drawing.Size(163, 20);
-			this.textBox14.TabIndex = 25;
+			this.nameparent2.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.nameparent2.Location = new System.Drawing.Point(78, 19);
+			this.nameparent2.Name = "nameparent2";
+			this.nameparent2.Size = new System.Drawing.Size(163, 20);
+			this.nameparent2.TabIndex = 25;
 			// 
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.label13);
 			this.groupBox2.Controls.Add(this.label12);
 			this.groupBox2.Controls.Add(this.label11);
-			this.groupBox2.Controls.Add(this.textBox11);
-			this.groupBox2.Controls.Add(this.textBox5);
-			this.groupBox2.Controls.Add(this.textBox4);
+			this.groupBox2.Controls.Add(this.emailparent1);
+			this.groupBox2.Controls.Add(this.phoneparent1);
+			this.groupBox2.Controls.Add(this.nameparent1);
 			this.groupBox2.Location = new System.Drawing.Point(11, 274);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(262, 100);
@@ -179,47 +180,47 @@
 			this.label11.TabIndex = 22;
 			this.label11.Text = "Name";
 			// 
-			// textBox11
+			// emailparent1
 			// 
-			this.textBox11.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox11.Location = new System.Drawing.Point(98, 71);
-			this.textBox11.Name = "textBox11";
-			this.textBox11.Size = new System.Drawing.Size(158, 20);
-			this.textBox11.TabIndex = 24;
+			this.emailparent1.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.emailparent1.Location = new System.Drawing.Point(98, 71);
+			this.emailparent1.Name = "emailparent1";
+			this.emailparent1.Size = new System.Drawing.Size(158, 20);
+			this.emailparent1.TabIndex = 24;
 			// 
-			// textBox5
+			// phoneparent1
 			// 
-			this.textBox5.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox5.Location = new System.Drawing.Point(98, 45);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(158, 20);
-			this.textBox5.TabIndex = 23;
+			this.phoneparent1.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.phoneparent1.Location = new System.Drawing.Point(98, 45);
+			this.phoneparent1.Name = "phoneparent1";
+			this.phoneparent1.Size = new System.Drawing.Size(158, 20);
+			this.phoneparent1.TabIndex = 23;
 			// 
-			// textBox4
+			// nameparent1
 			// 
-			this.textBox4.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox4.Location = new System.Drawing.Point(98, 19);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(158, 20);
-			this.textBox4.TabIndex = 22;
+			this.nameparent1.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.nameparent1.Location = new System.Drawing.Point(98, 19);
+			this.nameparent1.Name = "nameparent1";
+			this.nameparent1.Size = new System.Drawing.Size(158, 20);
+			this.nameparent1.TabIndex = 22;
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.dateTimePicker2);
-			this.groupBox1.Controls.Add(this.dateTimePicker1);
+			this.groupBox1.Controls.Add(this.StartDate);
+			this.groupBox1.Controls.Add(this.EndDate);
 			this.groupBox1.Controls.Add(this.label10);
 			this.groupBox1.Controls.Add(this.label9);
 			this.groupBox1.Controls.Add(this.label8);
-			this.groupBox1.Controls.Add(this.textBox10);
-			this.groupBox1.Controls.Add(this.textBox9);
-			this.groupBox1.Controls.Add(this.textBox8);
-			this.groupBox1.Controls.Add(this.textBox7);
+			this.groupBox1.Controls.Add(this.transpotation);
+			this.groupBox1.Controls.Add(this.medication);
+			this.groupBox1.Controls.Add(this.restriction);
+			this.groupBox1.Controls.Add(this.age);
 			this.groupBox1.Controls.Add(this.label7);
-			this.groupBox1.Controls.Add(this.textBox6);
+			this.groupBox1.Controls.Add(this.nickname);
 			this.groupBox1.Controls.Add(this.label6);
-			this.groupBox1.Controls.Add(this.textBox3);
-			this.groupBox1.Controls.Add(this.textBox2);
-			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.Controls.Add(this.nationality);
+			this.groupBox1.Controls.Add(this.bunk);
+			this.groupBox1.Controls.Add(this.name);
 			this.groupBox1.Controls.Add(this.label5);
 			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Controls.Add(this.label3);
@@ -232,19 +233,19 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "CamperInfo";
 			// 
-			// dateTimePicker2
+			// StartDate
 			// 
-			this.dateTimePicker2.Location = new System.Drawing.Point(78, 154);
-			this.dateTimePicker2.Name = "dateTimePicker2";
-			this.dateTimePicker2.Size = new System.Drawing.Size(167, 20);
-			this.dateTimePicker2.TabIndex = 21;
+			this.StartDate.Location = new System.Drawing.Point(78, 154);
+			this.StartDate.Name = "StartDate";
+			this.StartDate.Size = new System.Drawing.Size(167, 20);
+			this.StartDate.TabIndex = 21;
 			// 
-			// dateTimePicker1
+			// EndDate
 			// 
-			this.dateTimePicker1.Location = new System.Drawing.Point(354, 153);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(167, 20);
-			this.dateTimePicker1.TabIndex = 20;
+			this.EndDate.Location = new System.Drawing.Point(354, 153);
+			this.EndDate.Name = "EndDate";
+			this.EndDate.Size = new System.Drawing.Size(167, 20);
+			this.EndDate.TabIndex = 20;
 			// 
 			// label10
 			// 
@@ -274,37 +275,37 @@
 			this.label8.TabIndex = 17;
 			this.label8.Text = "Restriction";
 			// 
-			// textBox10
+			// transpotation
 			// 
-			this.textBox10.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox10.Location = new System.Drawing.Point(354, 112);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(167, 20);
-			this.textBox10.TabIndex = 16;
+			this.transpotation.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.transpotation.Location = new System.Drawing.Point(354, 112);
+			this.transpotation.Name = "transpotation";
+			this.transpotation.Size = new System.Drawing.Size(167, 20);
+			this.transpotation.TabIndex = 16;
 			// 
-			// textBox9
+			// medication
 			// 
-			this.textBox9.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox9.Location = new System.Drawing.Point(77, 112);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(168, 20);
-			this.textBox9.TabIndex = 15;
+			this.medication.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.medication.Location = new System.Drawing.Point(77, 112);
+			this.medication.Name = "medication";
+			this.medication.Size = new System.Drawing.Size(168, 20);
+			this.medication.TabIndex = 15;
 			// 
-			// textBox8
+			// restriction
 			// 
-			this.textBox8.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox8.Location = new System.Drawing.Point(354, 82);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(167, 20);
-			this.textBox8.TabIndex = 14;
+			this.restriction.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.restriction.Location = new System.Drawing.Point(354, 82);
+			this.restriction.Name = "restriction";
+			this.restriction.Size = new System.Drawing.Size(167, 20);
+			this.restriction.TabIndex = 14;
 			// 
-			// textBox7
+			// age
 			// 
-			this.textBox7.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox7.Location = new System.Drawing.Point(354, 56);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(167, 20);
-			this.textBox7.TabIndex = 13;
+			this.age.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.age.Location = new System.Drawing.Point(354, 56);
+			this.age.Name = "age";
+			this.age.Size = new System.Drawing.Size(167, 20);
+			this.age.TabIndex = 13;
 			// 
 			// label7
 			// 
@@ -315,13 +316,13 @@
 			this.label7.TabIndex = 12;
 			this.label7.Text = "Age";
 			// 
-			// textBox6
+			// nickname
 			// 
-			this.textBox6.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox6.Location = new System.Drawing.Point(354, 24);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(167, 20);
-			this.textBox6.TabIndex = 11;
+			this.nickname.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.nickname.Location = new System.Drawing.Point(354, 24);
+			this.nickname.Name = "nickname";
+			this.nickname.Size = new System.Drawing.Size(167, 20);
+			this.nickname.TabIndex = 11;
 			// 
 			// label6
 			// 
@@ -332,27 +333,27 @@
 			this.label6.TabIndex = 10;
 			this.label6.Text = "Nickname";
 			// 
-			// textBox3
+			// nationality
 			// 
-			this.textBox3.Location = new System.Drawing.Point(78, 82);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(167, 20);
-			this.textBox3.TabIndex = 7;
+			this.nationality.Location = new System.Drawing.Point(78, 82);
+			this.nationality.Name = "nationality";
+			this.nationality.Size = new System.Drawing.Size(167, 20);
+			this.nationality.TabIndex = 7;
 			// 
-			// textBox2
+			// bunk
 			// 
-			this.textBox2.Location = new System.Drawing.Point(78, 53);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(167, 20);
-			this.textBox2.TabIndex = 6;
+			this.bunk.Location = new System.Drawing.Point(78, 53);
+			this.bunk.Name = "bunk";
+			this.bunk.Size = new System.Drawing.Size(167, 20);
+			this.bunk.TabIndex = 6;
 			// 
-			// textBox1
+			// name
 			// 
-			this.textBox1.ForeColor = System.Drawing.SystemColors.MenuText;
-			this.textBox1.Location = new System.Drawing.Point(78, 24);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(167, 20);
-			this.textBox1.TabIndex = 5;
+			this.name.ForeColor = System.Drawing.SystemColors.MenuText;
+			this.name.Location = new System.Drawing.Point(78, 24);
+			this.name.Name = "name";
+			this.name.Size = new System.Drawing.Size(167, 20);
+			this.name.TabIndex = 5;
 			// 
 			// label5
 			// 
@@ -407,6 +408,7 @@
 			this.comboBox1.Size = new System.Drawing.Size(223, 21);
 			this.comboBox1.TabIndex = 6;
 			this.comboBox1.Text = "Select Camper Info";
+			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
 			// 
 			// button1
 			// 
@@ -414,24 +416,36 @@
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 21);
 			this.button1.TabIndex = 5;
-			this.button1.Text = "Save ";
+			this.button1.Text = "Save editing";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(404, 21);
+			this.button2.Location = new System.Drawing.Point(131, 387);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(98, 21);
 			this.button2.TabIndex = 10;
-			this.button2.Text = "New Camper";
+			this.button2.Text = "Add New Camper";
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// DeleteButton
+			// 
+			this.DeleteButton.Location = new System.Drawing.Point(346, 387);
+			this.DeleteButton.Name = "DeleteButton";
+			this.DeleteButton.Size = new System.Drawing.Size(109, 21);
+			this.DeleteButton.TabIndex = 11;
+			this.DeleteButton.Text = "Delete Camper";
+			this.DeleteButton.UseVisualStyleBackColor = true;
+			this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
 			// 
 			// Register
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(556, 420);
+			this.Controls.Add(this.DeleteButton);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
@@ -440,6 +454,7 @@
 			this.Controls.Add(this.button1);
 			this.Name = "Register";
 			this.Text = "Register/Edit";
+			this.Load += new System.EventHandler(this.Register_Load);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
@@ -456,32 +471,32 @@
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.TextBox textBox12;
-		private System.Windows.Forms.TextBox textBox13;
-		private System.Windows.Forms.TextBox textBox14;
+		private System.Windows.Forms.TextBox emailparent2;
+		private System.Windows.Forms.TextBox phoneparent2;
+		private System.Windows.Forms.TextBox nameparent2;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox emailparent1;
+		private System.Windows.Forms.TextBox phoneparent1;
+		private System.Windows.Forms.TextBox nameparent1;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.DateTimePicker dateTimePicker2;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
+		private System.Windows.Forms.DateTimePicker StartDate;
+		private System.Windows.Forms.DateTimePicker EndDate;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox7;
+		private System.Windows.Forms.TextBox transpotation;
+		private System.Windows.Forms.TextBox medication;
+		private System.Windows.Forms.TextBox restriction;
+		private System.Windows.Forms.TextBox age;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TextBox nickname;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox nationality;
+		private System.Windows.Forms.TextBox bunk;
+		private System.Windows.Forms.TextBox name;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
@@ -490,5 +505,6 @@
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button DeleteButton;
 	}
 }
