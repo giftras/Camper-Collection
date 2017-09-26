@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Type1>
+  <item>
+    <subject>Activity1</subject>
+      <item>
+        <activity>soccer</activity>
+      </item>
+  </item>
+  <item>
+    <subject>Activity2</subject>
+       <item>
+        <activity>dancing</activity>
+       </item>
+  </item>
+  <item>
+    <subject>Activity3</subject>
+        <item>
+          <activity>circus</activity>
+        </item>
+  </item>
+  <item>
+    <subject>Activity4</subject>
+        <item>
+          <activity>Tennis</activity>
+        </item>
+  </item>
+  <item>
+    <subject>Activity5</subject>
+        <item>
+          <activity>Softball</activity>
+        </item>
+  </item>
+</Type1>
