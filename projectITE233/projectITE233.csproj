@@ -118,6 +118,7 @@
     <Content Include="activities.xml" />
     <Content Include="bunks.xml" />
     <Content Include="camper.xml" />
+    <Content Include="selectedActivities.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

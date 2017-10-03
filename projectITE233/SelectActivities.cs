@@ -94,13 +94,23 @@ namespace projectITE233
 
         private void Save_Click(object sender, EventArgs e)
         {
+            XDocument xdoc = XDocument.Load("../../selectedActivities.xml");
+            XElement root = xdoc.Root;
+            root.Add(
+                new XElement("Bunk", bunkBox.SelectedItem.ToString()),
+                new XElement("Name", nameBox.SelectedItem.ToString()),
+                new XElement("Date",dateTimePicker1.ToString()),
+                new XElement("Activity1", sub1.SelectedItem.ToString()),
+                new XElement("Activity2", sub2.SelectedItem.ToString()),
+                new XElement("Activity3", sub3.SelectedItem.ToString()),
+                new XElement("Activity4", sub4.SelectedItem.ToString()),
+                new XElement("Activity5", sub5.SelectedItem.ToString())
+                );
+
+
             this.Close();
         }
 
-        private void SaveNext_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
 		private void bunkBox_SelectedIndexChanged(object sender, EventArgs e)
 		{
