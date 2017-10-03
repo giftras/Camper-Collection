@@ -56,7 +56,6 @@
 			this.nickname = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.nationality = new System.Windows.Forms.TextBox();
-			this.bunk = new System.Windows.Forms.TextBox();
 			this.name = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
@@ -67,6 +66,7 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.DeleteButton = new System.Windows.Forms.Button();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.groupBox3.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -206,6 +206,7 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.comboBox2);
 			this.groupBox1.Controls.Add(this.StartDate);
 			this.groupBox1.Controls.Add(this.EndDate);
 			this.groupBox1.Controls.Add(this.label10);
@@ -219,7 +220,6 @@
 			this.groupBox1.Controls.Add(this.nickname);
 			this.groupBox1.Controls.Add(this.label6);
 			this.groupBox1.Controls.Add(this.nationality);
-			this.groupBox1.Controls.Add(this.bunk);
 			this.groupBox1.Controls.Add(this.name);
 			this.groupBox1.Controls.Add(this.label5);
 			this.groupBox1.Controls.Add(this.label4);
@@ -340,13 +340,6 @@
 			this.nationality.Size = new System.Drawing.Size(167, 20);
 			this.nationality.TabIndex = 7;
 			// 
-			// bunk
-			// 
-			this.bunk.Location = new System.Drawing.Point(78, 53);
-			this.bunk.Name = "bunk";
-			this.bunk.Size = new System.Drawing.Size(167, 20);
-			this.bunk.TabIndex = 6;
-			// 
 			// name
 			// 
 			this.name.ForeColor = System.Drawing.SystemColors.MenuText;
@@ -440,6 +433,14 @@
 			this.DeleteButton.UseVisualStyleBackColor = true;
 			this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
 			// 
+			// comboBox2
+			// 
+			this.comboBox2.FormattingEnabled = true;
+			this.comboBox2.Location = new System.Drawing.Point(78, 52);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(167, 21);
+			this.comboBox2.TabIndex = 22;
+			// 
 			// Register
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,7 +496,6 @@
 		private System.Windows.Forms.TextBox nickname;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox nationality;
-		private System.Windows.Forms.TextBox bunk;
 		private System.Windows.Forms.TextBox name;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label4;
@@ -506,5 +506,6 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button DeleteButton;
+		private System.Windows.Forms.ComboBox comboBox2;
 	}
 }

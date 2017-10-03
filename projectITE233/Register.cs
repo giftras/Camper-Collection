@@ -31,7 +31,7 @@ namespace projectITE233
 			XElement newTag = new XElement("item",
 				new XElement("name", name.Text),
 				new XElement("nickname", nickname.Text),
-				new XElement("bunk", bunk.Text),
+				new XElement("bunk", comboBox2.Text),
 				new XElement("age", age.Text),
 				new XElement("nationality", nationality.Text), 
 				new XElement("restriction", restriction.Text),
@@ -48,7 +48,6 @@ namespace projectITE233
 				);
 			//add element to the document under type one element
 				xdoc.Element("Type1").Add(newTag);
-			
 			//save doc
 			xdoc.Save("../../camper.xml");
 			//reload the form
@@ -68,6 +67,17 @@ namespace projectITE233
 			{
 				comboBox1.Items.Add(n.Element("name").Value.ToString());
 			}
+			//for bunk selection
+			XDocument xdoc2 = XDocument.Load("../../bunks.xml");
+			var xdocRead2 = xdoc2.Elements("Type1").Elements("bunk");
+			foreach (var n in xdocRead2)
+			{
+				comboBox2.Items.Add(n.Value);
+			}
+			if (comboBox2.Items.Count > 0)
+			{
+				comboBox2.SelectedIndex = 0;
+			}
 		}
 
 		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -79,7 +89,7 @@ namespace projectITE233
 			//get camper info
 			name.Text = item.Element("name").Value;
 			nickname.Text = item.Element("nickname").Value;
-			bunk.Text = item.Element("bunk").Value;
+			comboBox2.Text = item.Element("bunk").Value;
 			age.Text = item.Element("age").Value;
 			nationality.Text = item.Element("nationality").Value;
 			restriction.Text = item.Element("restriction").Value;
@@ -99,7 +109,7 @@ namespace projectITE233
 		{
 			XDocument xdoc = XDocument.Load("../../camper.xml");
 			var xdocRead = xdoc.Elements("Type1").Elements("item");
-			//delent the element where name is same with comboBox
+			//delete the element where name is same with comboBox
 			xdocRead.Where(a => a.Element("name").Value == comboBox1.Text).Single().Remove();
 			//save doc
 			xdoc.Save("../../camper.xml");
@@ -115,7 +125,7 @@ namespace projectITE233
 			// change camper info
 			//item.Element("name").Value = name.Text; // cannot edit name
 			item.Element("nickname").Value = nickname.Text;
-			item.Element("bunk").Value = bunk.Text;
+			item.Element("bunk").Value = comboBox2.Text;
 			item.Element("age").Value = age.Text;
 			item.Element("nationality").Value = nationality.Text;
 			item.Element("restriction").Value = restriction.Text;

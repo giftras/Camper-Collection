@@ -30,23 +30,23 @@
 		{
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.button1 = new System.Windows.Forms.Button();
+			this.activity1 = new System.Windows.Forms.ListBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.button2 = new System.Windows.Forms.Button();
-			this.listBox2 = new System.Windows.Forms.ListBox();
+			this.activity2 = new System.Windows.Forms.ListBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.button3 = new System.Windows.Forms.Button();
-			this.listBox3 = new System.Windows.Forms.ListBox();
+			this.activity3 = new System.Windows.Forms.ListBox();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
 			this.button4 = new System.Windows.Forms.Button();
-			this.listBox4 = new System.Windows.Forms.ListBox();
+			this.activity4 = new System.Windows.Forms.ListBox();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
 			this.button5 = new System.Windows.Forms.Button();
-			this.listBox5 = new System.Windows.Forms.ListBox();
+			this.activity5 = new System.Windows.Forms.ListBox();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button6 = new System.Windows.Forms.Button();
+			this.addbutton = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -64,21 +64,13 @@
 			// groupBox1
 			// 
 			this.groupBox1.Controls.Add(this.button1);
-			this.groupBox1.Controls.Add(this.listBox1);
+			this.groupBox1.Controls.Add(this.activity1);
 			this.groupBox1.Location = new System.Drawing.Point(6, 48);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(152, 152);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Activity 1";
-			// 
-			// listBox1
-			// 
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.Location = new System.Drawing.Point(15, 19);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(120, 95);
-			this.listBox1.TabIndex = 0;
 			// 
 			// button1
 			// 
@@ -89,10 +81,20 @@
 			this.button1.Text = "Delete";
 			this.button1.UseVisualStyleBackColor = true;
 			// 
+			// activity1
+			// 
+			this.activity1.FormattingEnabled = true;
+			this.activity1.Items.AddRange(new object[] {
+            "Soccer"});
+			this.activity1.Location = new System.Drawing.Point(15, 19);
+			this.activity1.Name = "activity1";
+			this.activity1.Size = new System.Drawing.Size(120, 95);
+			this.activity1.TabIndex = 0;
+			// 
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.button2);
-			this.groupBox2.Controls.Add(this.listBox2);
+			this.groupBox2.Controls.Add(this.activity2);
 			this.groupBox2.Location = new System.Drawing.Point(162, 49);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(152, 152);
@@ -109,18 +111,20 @@
 			this.button2.Text = "Delete";
 			this.button2.UseVisualStyleBackColor = true;
 			// 
-			// listBox2
+			// activity2
 			// 
-			this.listBox2.FormattingEnabled = true;
-			this.listBox2.Location = new System.Drawing.Point(15, 19);
-			this.listBox2.Name = "listBox2";
-			this.listBox2.Size = new System.Drawing.Size(120, 95);
-			this.listBox2.TabIndex = 0;
+			this.activity2.FormattingEnabled = true;
+			this.activity2.Items.AddRange(new object[] {
+            "Soccer"});
+			this.activity2.Location = new System.Drawing.Point(15, 19);
+			this.activity2.Name = "activity2";
+			this.activity2.Size = new System.Drawing.Size(120, 95);
+			this.activity2.TabIndex = 0;
 			// 
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.button3);
-			this.groupBox3.Controls.Add(this.listBox3);
+			this.groupBox3.Controls.Add(this.activity3);
 			this.groupBox3.Location = new System.Drawing.Point(319, 49);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(152, 152);
@@ -137,18 +141,20 @@
 			this.button3.Text = "Delete";
 			this.button3.UseVisualStyleBackColor = true;
 			// 
-			// listBox3
+			// activity3
 			// 
-			this.listBox3.FormattingEnabled = true;
-			this.listBox3.Location = new System.Drawing.Point(15, 19);
-			this.listBox3.Name = "listBox3";
-			this.listBox3.Size = new System.Drawing.Size(120, 95);
-			this.listBox3.TabIndex = 0;
+			this.activity3.FormattingEnabled = true;
+			this.activity3.Items.AddRange(new object[] {
+            "Soccer"});
+			this.activity3.Location = new System.Drawing.Point(15, 19);
+			this.activity3.Name = "activity3";
+			this.activity3.Size = new System.Drawing.Size(120, 95);
+			this.activity3.TabIndex = 0;
 			// 
 			// groupBox4
 			// 
 			this.groupBox4.Controls.Add(this.button4);
-			this.groupBox4.Controls.Add(this.listBox4);
+			this.groupBox4.Controls.Add(this.activity4);
 			this.groupBox4.Location = new System.Drawing.Point(475, 49);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(152, 152);
@@ -165,18 +171,20 @@
 			this.button4.Text = "Delete";
 			this.button4.UseVisualStyleBackColor = true;
 			// 
-			// listBox4
+			// activity4
 			// 
-			this.listBox4.FormattingEnabled = true;
-			this.listBox4.Location = new System.Drawing.Point(15, 19);
-			this.listBox4.Name = "listBox4";
-			this.listBox4.Size = new System.Drawing.Size(120, 95);
-			this.listBox4.TabIndex = 0;
+			this.activity4.FormattingEnabled = true;
+			this.activity4.Items.AddRange(new object[] {
+            "Soccer"});
+			this.activity4.Location = new System.Drawing.Point(15, 19);
+			this.activity4.Name = "activity4";
+			this.activity4.Size = new System.Drawing.Size(120, 95);
+			this.activity4.TabIndex = 0;
 			// 
 			// groupBox5
 			// 
 			this.groupBox5.Controls.Add(this.button5);
-			this.groupBox5.Controls.Add(this.listBox5);
+			this.groupBox5.Controls.Add(this.activity5);
 			this.groupBox5.Location = new System.Drawing.Point(632, 49);
 			this.groupBox5.Name = "groupBox5";
 			this.groupBox5.Size = new System.Drawing.Size(152, 152);
@@ -193,18 +201,26 @@
 			this.button5.Text = "Delete";
 			this.button5.UseVisualStyleBackColor = true;
 			// 
-			// listBox5
+			// activity5
 			// 
-			this.listBox5.FormattingEnabled = true;
-			this.listBox5.Location = new System.Drawing.Point(15, 19);
-			this.listBox5.Name = "listBox5";
-			this.listBox5.Size = new System.Drawing.Size(120, 95);
-			this.listBox5.TabIndex = 0;
+			this.activity5.FormattingEnabled = true;
+			this.activity5.Items.AddRange(new object[] {
+            "Soccer"});
+			this.activity5.Location = new System.Drawing.Point(15, 19);
+			this.activity5.Name = "activity5";
+			this.activity5.Size = new System.Drawing.Size(120, 95);
+			this.activity5.TabIndex = 0;
 			// 
 			// comboBox1
 			// 
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(176, 219);
+			this.comboBox1.Items.AddRange(new object[] {
+            "Activity1",
+            "Activity2",
+            "Activity3",
+            "Activity4",
+            "Activity5"});
+			this.comboBox1.Location = new System.Drawing.Point(113, 219);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(157, 21);
 			this.comboBox1.TabIndex = 3;
@@ -212,27 +228,27 @@
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(351, 220);
+			this.textBox1.Location = new System.Drawing.Point(286, 219);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(113, 20);
+			this.textBox1.Size = new System.Drawing.Size(156, 20);
 			this.textBox1.TabIndex = 4;
 			this.textBox1.Text = "Activity name";
 			// 
-			// button6
+			// addbutton
 			// 
-			this.button6.Location = new System.Drawing.Point(489, 218);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(75, 23);
-			this.button6.TabIndex = 5;
-			this.button6.Text = "Add";
-			this.button6.UseVisualStyleBackColor = true;
+			this.addbutton.Location = new System.Drawing.Point(461, 218);
+			this.addbutton.Name = "addbutton";
+			this.addbutton.Size = new System.Drawing.Size(75, 23);
+			this.addbutton.TabIndex = 5;
+			this.addbutton.Text = "Add";
+			this.addbutton.UseVisualStyleBackColor = true;
 			// 
 			// AddActivities
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(793, 263);
-			this.Controls.Add(this.button6);
+			this.Controls.Add(this.addbutton);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.groupBox2);
@@ -243,6 +259,7 @@
 			this.Controls.Add(this.dateTimePicker1);
 			this.Name = "AddActivities";
 			this.Text = "AddActivities";
+			this.Load += new System.EventHandler(this.AddActivities_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox3.ResumeLayout(false);
@@ -258,21 +275,21 @@
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.ListBox activity1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.ListBox listBox2;
+		private System.Windows.Forms.ListBox activity2;
 		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.ListBox listBox3;
+		private System.Windows.Forms.ListBox activity3;
 		private System.Windows.Forms.GroupBox groupBox4;
 		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.ListBox listBox4;
+		private System.Windows.Forms.ListBox activity4;
 		private System.Windows.Forms.GroupBox groupBox5;
 		private System.Windows.Forms.Button button5;
-		private System.Windows.Forms.ListBox listBox5;
+		private System.Windows.Forms.ListBox activity5;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Button addbutton;
 	}
 }
