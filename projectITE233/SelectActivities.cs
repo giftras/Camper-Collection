@@ -107,6 +107,7 @@ namespace projectITE233
                 new XElement("Activity5", sub5.SelectedItem.ToString())
                 );
 
+            xdoc.Save("../../selectedActivities.xml");
 
             this.Close();
         }
