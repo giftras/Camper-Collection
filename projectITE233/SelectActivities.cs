@@ -99,7 +99,7 @@ namespace projectITE233
             root.Add(
                 new XElement("Bunk", bunkBox.SelectedItem.ToString()),
                 new XElement("Name", nameBox.SelectedItem.ToString()),
-                new XElement("Date",dateTimePicker1.ToString()),
+                new XElement("Date", dateTimePicker1.Value.ToString("yyyy-MM-dd")),
                 new XElement("Activity1", sub1.SelectedItem.ToString()),
                 new XElement("Activity2", sub2.SelectedItem.ToString()),
                 new XElement("Activity3", sub3.SelectedItem.ToString()),
