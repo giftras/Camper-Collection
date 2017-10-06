@@ -54,4 +54,22 @@
     <phoneParent2></phoneParent2>
     <emailParent2></emailParent2>
   </item>
+  <item>
+    <name></name>
+    <nickname></nickname>
+    <bunk>1</bunk>
+    <age></age>
+    <nationality></nationality>
+    <restriction></restriction>
+    <medications></medications>
+    <transportation></transportation>
+    <startdate>Thursday, October 5, 2017</startdate>
+    <enddate>Thursday, October 5, 2017</enddate>
+    <nameParent1></nameParent1>
+    <phoneParent1></phoneParent1>
+    <emailParent1></emailParent1>
+    <nameParent2></nameParent2>
+    <phoneParent2></phoneParent2>
+    <emailParent2></emailParent2>
+  </item>
 </Type1>

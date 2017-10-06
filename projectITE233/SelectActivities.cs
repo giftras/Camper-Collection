@@ -42,8 +42,8 @@ namespace projectITE233
 
 			XDocument xdoc3 = XDocument.Load("../../activities.xml");
 			// read items
-			var xdocRead3 = xdoc3.Elements("Type1").Elements("date").Elements("activity");
-			if (xdocRead3.Count() > 0)
+			var xdocRead3 = xdoc3.Elements("Type1").Elements("date").Where(a => a.Element("value").Value.Equals(dateTimePicker1.Value.ToString("yyyy-MM-dd"))).Elements("activity");
+            if (xdocRead3.Count() > 0)
 			{
 				sub1.Items.Clear();
 				sub2.Items.Clear();
@@ -81,15 +81,23 @@ namespace projectITE233
 					//count++;
 				}
 
-				//            XDocument xdocA = XDocument.Load("../../activities.xml");
-				//            var xdocReadA = xdocA.Elements("Type1").Elements("item").Elements("subject").Elements("activities");
-				//          foreach (var n in xdocReadA)
-				//            {
-				//                sub1.Items.Add(n.Element("activityname").Value);
-				//            }
-
 			}
-		}
+            else
+            {
+                sub1.Items.Clear();
+                sub2.Items.Clear();
+                sub3.Items.Clear();
+                sub4.Items.Clear();
+                sub5.Items.Clear();
+                sub1.Items.Add("Soccer");
+                sub2.Items.Add("Soccer");
+                sub3.Items.Add("Soccer");
+                sub4.Items.Add("Soccer");
+                sub5.Items.Add("Soccer");
+            }
+        }
+
+       
 
 
         private void Save_Click(object sender, EventArgs e)
