@@ -37,8 +37,8 @@ namespace projectITE233
 				new XElement("restriction", restriction.Text),
 				new XElement("medications", medication.Text),
 				new XElement("transportation", transpotation.Text),
-				new XElement("startdate", StartDate.Text),
-				new XElement("enddate", EndDate.Text),
+				new XElement("startdate", StartDate.Value.ToString("yyyy-MM-dd")),
+				new XElement("enddate", EndDate.Value.ToString("yyyy-MM-dd")),
 				new XElement("nameParent1", nameparent1.Text),
 				new XElement("phoneParent1", phoneparent1.Text),
 				new XElement("emailParent1", emailparent1.Text),
@@ -131,8 +131,8 @@ namespace projectITE233
 			item.Element("restriction").Value = restriction.Text;
 			item.Element("medications").Value = medication.Text;
 			item.Element("transportation").Value = transpotation.Text;
-			item.Element("startdate").Value = StartDate.Text;
-			item.Element("enddate").Value = EndDate.Text;
+			item.Element("startdate").Value = StartDate.Value.ToString("yyyy-MM-dd");
+			item.Element("enddate").Value = EndDate.Value.ToString("yyyy-MM-dd");
 			item.Element("nameParent1").Value = nameparent1.Text;
 			item.Element("phoneParent1").Value = phoneparent1.Text;
 			item.Element("emailParent1").Value = emailparent1.Text;
