@@ -20,6 +20,7 @@ namespace projectITE233
 
 		private void AddActivities_Load(object sender, EventArgs e)
 		{
+			//called LoadXML()
             LoadXml();
 
 			
@@ -28,11 +29,9 @@ namespace projectITE233
         {
             //Load document
             XDocument xdoc = XDocument.Load("../../activities.xml");
-            // read items
-            var xdocRead = xdoc.Elements("Type1").Elements("date").Where(a => a.Element("value").Value.Equals(dateTimePicker1.Value.ToString("yyyy-MM-dd"))).Elements("activity"); ///.Where(a => a.Element("value").Equals() );
-            //var xdocRead = xdoc.Elements("Type1").Elements("date").Where(a => a.Element("value").Value == ???).Elements("activity");
-
-            //MessageBox.Show(xdoc.Elements("Type1").Elements("date").ElementAt(0).ToString());
+            // read activity where the item in that date
+            var xdocRead = xdoc.Elements("Type1").Elements("date").Where(a => a.Element("value").Value.Equals(dateTimePicker1.Value.ToString("yyyy-MM-dd"))).Elements("activity"); 
+           
             if (xdocRead.Count() > 0)
             {
                 activity1.Items.Clear();
@@ -41,7 +40,8 @@ namespace projectITE233
                 activity4.Items.Clear();
                 activity5.Items.Clear();
                 int count = 0;
-                foreach (var n in xdocRead)
+				// if has value in name then get value and display in list box
+				foreach (var n in xdocRead)
                 {
                     foreach (var a in n.Elements("name"))
                     {
@@ -68,12 +68,13 @@ namespace projectITE233
                     }
                     count++;
 
-                    //count++;
+                   
                 }
             }
             else
             {
-                activity1.Items.Clear();
+				// if no value in name then clear list box and show the default activity as soccer
+				activity1.Items.Clear();
                 activity2.Items.Clear();
                 activity3.Items.Clear();
                 activity4.Items.Clear();
@@ -89,10 +90,12 @@ namespace projectITE233
 
         private void addtoXML(int n, String b)
         {
+			//load activities.xml
             XDocument xdoc = XDocument.Load("../../activities.xml");
-            //XElement root = xdoc.Root;
+			//read element activity
             var xdocRead = xdoc.Elements("Type1").Elements("date").Elements("activity");
             int count = 0;
+			//add element into activity at selected session
             foreach (var x in xdocRead)
             {
                 if (count == n)
@@ -101,6 +104,7 @@ namespace projectITE233
                 }
                 count++;
             }
+			//save doc
             xdoc.Save("../../activities.xml");
            
         }
@@ -110,7 +114,7 @@ namespace projectITE233
 
             String a = comboBox1.SelectedItem.ToString(); //Activity Session
             String b = textBox1.Text; //Activity Name
-
+			//add acticity according to the session that has been selected
             switch (a){
                 case "Activity1": {
                         addtoXML(0, b);
@@ -161,13 +165,15 @@ namespace projectITE233
             {
                 if (count == tags)
                 {
-                  //  MessageBox.Show(x.Elements("name")ToString());
+					//remove activity from xml
                     x.Elements("name").Where(a => a.Value == listboxlist[tags].Text).Single().Remove();
+					//remove activity from list box
                     listboxlist[tags].Items.RemoveAt(listboxlist[tags].SelectedIndex);
-                    //x.Elements("Type1").Elements("date").Where(a => a.Element("name").Value == comboBox1.Text).Single().Remove();
+                   
                 }
                 count++;
             }
+			//save doc
             xdoc.Save("../../activities.xml");
 
 

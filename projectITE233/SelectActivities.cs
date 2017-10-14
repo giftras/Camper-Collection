@@ -22,7 +22,9 @@ namespace projectITE233
 
 		private void Form_Load(object sender, EventArgs e)
 		{
+			//Load document
 			XDocument xdoc = XDocument.Load("../../bunks.xml");
+			//read bunk
 			var xdocRead = xdoc.Elements("Type1").Elements("bunk");
 			foreach (var n in xdocRead)
 			{
@@ -33,7 +35,9 @@ namespace projectITE233
 				bunkBox.SelectedIndex = 0;
 			}
 
+			//load camper
 			XDocument xdoc2 = XDocument.Load("../../camper.xml");
+			//read item where the bunk value and get name at that value
 			var xdocRead2 = xdoc2.Elements("Type1").Elements("item").Where(a => a.Element("bunk").Value == bunkBox.Text);
 			foreach (var n in xdocRead2)
 			{
@@ -41,10 +45,11 @@ namespace projectITE233
 			}
 
 			XDocument xdoc3 = XDocument.Load("../../activities.xml");
-			// read items
+			// read activity in that day
 			var xdocRead3 = xdoc3.Elements("Type1").Elements("date").Where(a => a.Element("value").Value.Equals(dateTimePicker1.Value.ToString("yyyy-MM-dd"))).Elements("activity");
             if (xdocRead3.Count() > 0)
 			{
+				//clear list box
 				sub1.Items.Clear();
 				sub2.Items.Clear();
 				sub3.Items.Clear();
@@ -53,6 +58,7 @@ namespace projectITE233
 				int count = 0;
 				foreach (var n in xdocRead3)
 				{
+					// if has value in name then get value and display in list box
 					foreach (var a in n.Elements("name"))
 					{
 						switch (count)
@@ -78,12 +84,13 @@ namespace projectITE233
 					}
 					count++;
 
-					//count++;
+					
 				}
 
 			}
             else
             {
+				// if no value in name then clear list box and show the default activity as soccer
                 sub1.Items.Clear();
                 sub2.Items.Clear();
                 sub3.Items.Clear();
@@ -102,9 +109,12 @@ namespace projectITE233
 
         private void Save_Click(object sender, EventArgs e)
         {
-            XDocument xdoc = XDocument.Load("../../selectedActivities.xml");
+			//load selectedActivities.xml
+			XDocument xdoc = XDocument.Load("../../selectedActivities.xml");
             XElement root = xdoc.Root;
-            root.Add(
+			//add element to selectedActivities.xml 
+			//if added the same value, it will add data twice
+			root.Add(
                 new XElement("Bunk", bunkBox.SelectedItem.ToString()),
                 new XElement("Name", nameBox.SelectedItem.ToString()),
                 new XElement("Date", dateTimePicker1.Value.ToString("yyyy-MM-dd")),
@@ -116,13 +126,14 @@ namespace projectITE233
                 );
 
             xdoc.Save("../../selectedActivities.xml");
-
+			//close the window when click save
             this.Close();
         }
 
 
 		private void bunkBox_SelectedIndexChanged(object sender, EventArgs e)
 		{
+			//if bunk changed the name in dropdown menu will change too
 			XDocument xdoc2 = XDocument.Load("../../camper.xml");
 			var xdocRead2 = xdoc2.Elements("Type1").Elements("item").Where(a => a.Element("bunk").Value == bunkBox.Text);
 			nameBox.Items.Clear();

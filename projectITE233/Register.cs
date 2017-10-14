@@ -95,7 +95,7 @@ namespace projectITE233
 			restriction.Text = item.Element("restriction").Value;
 			medication.Text = item.Element("medications").Value;
 			transpotation.Text = item.Element("transportation").Value;
-			StartDate.Text = item.Element("startdate").Value;
+			StartDate.Text =item.Element("startdate").Value;
 			EndDate.Text = item.Element("enddate").Value;
 			nameparent1.Text = item.Element("nameParent1").Value;
 			phoneparent1.Text = item.Element("phoneParent1").Value;

@@ -17,38 +17,30 @@ namespace projectITE233
 			InitializeComponent();
 		}
 
-		private void button6_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button5_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button1_Click(object sender, EventArgs e)
-		{
-			campSession session = new campSession();
-			session.ShowDialog();
-		}
-
 		private void button2_Click(object sender, EventArgs e)
 		{
+			//open register page into the new window
 			Register session = new Register();
 			session.ShowDialog();
 		}
 
 		private void button4_Click(object sender, EventArgs e)
 		{
+			//open select activity page into the new window
 			SelectActivities session = new SelectActivities();
 			session.ShowDialog();
 		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
+			//open add activity page into the new window
 			AddActivities session = new AddActivities();
 			session.ShowDialog();
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
